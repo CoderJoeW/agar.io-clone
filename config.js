@@ -34,5 +34,14 @@ module.exports = {
     mergeTimer: 15,
     sqlinfo: {
       fileName: "db.sqlite3",
+    },
+    databases: {
+        mariadbInfo: {
+            username: "agario",
+            password: "supersecretpassword",
+            host: "localhost",
+            db: "Agario",
+            enabled: true
+        }
     }
 };
