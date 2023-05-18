@@ -14,9 +14,11 @@
     "url": "https://github.com/owenashurst/agar.io-clone.git"
   },
   "author": "Huy Tran",
-  "maintainers": [{
-    "name": "Owen Ashurst"
-  }],
+  "maintainers": [
+    {
+      "name": "Owen Ashurst"
+    }
+  ],
   "license": "MIT",
   "contributors": [
     "abalabahaha <hi@abal.moe> (https://github.com/abalabahaha)",
@@ -57,6 +59,7 @@
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.7",
     "jshint": "^2.13.6",
+    "mariadb": "^3.1.2",
     "mocha": "^10.2.0",
     "nodemon": "^2.0.22",
     "sat": "^0.9.0",
