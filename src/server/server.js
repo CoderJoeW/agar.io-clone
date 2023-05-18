@@ -14,6 +14,10 @@ const loggingRepositry = require('./repositories/logging-repository');
 const chatRepository = require('./repositories/chat-repository');
 const config = require('../../config');
 const util = require('./lib/util');
+const crypto = require('crypto');
+const Database = require('./database');
+
+const db = new Database(config.databases.mariadbInfo.username, config.databases.mariadbInfo.username, config.databases.mariadbInfo.username, config.databases.mariadbInfo.username);
 
 const tree = quadtree(0, 0, config.gameWidth, config.gameHeight);
 
