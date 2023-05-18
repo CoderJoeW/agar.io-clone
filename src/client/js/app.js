@@ -24,7 +24,7 @@ function startGame(type) {
     global.screenWidth = window.innerWidth;
     global.screenHeight = window.innerHeight;
 
-    document.getElementById('startMenuWrapper').style.maxHeight = '0px';
+    document.getElementById('startMenuWrapper').style.display = 'none';
     document.getElementById('gameAreaWrapper').style.opacity = 1;
     if (!socket) {
         socket = io({query:"type=" + type});
@@ -270,7 +270,7 @@ function setupSocket(socket) {
         global.died = true;
         window.setTimeout(() => {
             document.getElementById('gameAreaWrapper').style.opacity = 0;
-            document.getElementById('startMenuWrapper').style.maxHeight = '1000px';
+            document.getElementById('startMenuWrapper').style.display = 'block';
             global.died = false;
             if (global.animLoopHandle) {
                 window.cancelAnimationFrame(global.animLoopHandle);
